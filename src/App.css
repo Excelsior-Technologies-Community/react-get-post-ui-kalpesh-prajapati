@@ -54,17 +54,112 @@
 /* CARD */
 .post-item {
   background: #ffffff;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 3px solid #000;
   box-shadow: 6px 6px 0 #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* TEXT */
 .post-item h3 {
   margin: 0 0 8px 0;
   font-weight: 800;
+  text-transform: capitalize;
 }
 
 .post-item p {
   margin: 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+.post-actions button,
+.btn-cancel {
+  padding: 8px 16px;
+  font-weight: bold;
+  border: 2px solid #000;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #000;
+  transition: 0.1s;
+}
+
+.post-actions button:hover,
+.btn-cancel:hover {
+  filter: brightness(1.1);
+}
+
+.post-actions button:active,
+.btn-cancel:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.btn-edit {
+  background: #00ccff;
+}
+
+.btn-delete {
+  background: #ff5555;
+  color: white;
+}
+
+.btn-update {
+  background: #00ff88 !important;
+}
+
+.btn-cancel {
+  background: #cccccc;
+  margin-top: 8px;
+}
+
+.btn-add {
+  background: #ffcc00;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.btn-delete-all {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: 2px solid #000;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #ff5555;
+  transition: 0.1s;
+}
+
+.btn-delete-all:hover {
+  background: #ff5555;
+}
+
+.btn-delete-all:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
 }
